@@ -1,0 +1,65 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #1c1c1c;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  padding: 10px;
+}
+
+.header-container {
+  background-color: #fffdfe;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color-input,
+.color-section,
+.generate-color {
+  height: 2.15rem;
+}
+
+.color-section,
+.generate-color {
+  cursor: pointer;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #9ca3af;
+  background-color: transparent;
+}
+
+.color-input {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.color-section {
+  outline: none;
+}
+
+.generate-color {
+}
+
+.colors-container {
+  display: flex;
+  /* width: 100%; */
+  height: 100%;
+}
+
+.colors-container > div {
+  background-color: #9ca3af;
+  width: 100%;
+  /* border: 1px solid black; */
+  height: 70vh;
+  overflow: hidden;
+}
