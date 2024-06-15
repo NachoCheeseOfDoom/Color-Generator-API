@@ -9,34 +9,27 @@
 </head>
 
 <body>
-    <section class="container">
-        <header class="header-container">
-            <input type="color" class="color-input" id="color-input" value="#0047AB">
-            <select class="color-section">
-                <option value="">--Please choose an option--</option>
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-                <option value="hamster">Hamster</option>
-                <option value="parrot">Parrot</option>
-                <option value="spider">Spider</option>
-                <option value="goldfish">Goldfish</option>
-            </select>
-            <button class="generate-color">Get color schema</button>
-        </header>
+    <header class="header-container">
+        <input type="color" class="color-input" id="color-input" size="8" value="#F55A5A">
+        <select class="color-mode-select" id="mode-selector">
+            <option value="analogic ">analogic </option>
+            <option value="monochrome ">monochrome</option>
+            <option value="monochrome-dark">monochrome-dark</option>
+            <option value="monochrome-light">monochrome-light</option>
+            <option value="complement">complement</option>
+            <option value="analogic-complement">analogic-complement</option>
+            <option value="triad">triad</option>
+            <option value="quad">quad</option>
+        </select>
+        <button id="generate-color-Btn" class="generate-color">Get color schema</button>
+    </header>
 
-        <main class="colors-container">
-            <div style="display: flex; flex-direction: column; text-align: center;">
-                <span>color</span>
-                <span>hex</span>
-            </div>
-            <div>Color</div>
-            <div>Color</div>
-            <div>Color</div>
-            <div>Color</div>
-        </main>
-    </section>
+    <span id="myPopup" class="popupText"></span>
 
-
+    <main class="colors-container">
+        <ul class="colors-list" id="colors-list">
+        </ul>
+    </main>
     <script src="mian.js"></script>
 </body>
 
