@@ -34,7 +34,6 @@ generateBtn.addEventListener("click", () => {
   const colorValue = colorInput.value.slice(1)
   const modeSelected = modeSelect.selectedOptions[0].label;
   loadColorList(colorValue, modeSelected)
-
 })
 
 function loadColorList(color, mode = 'analogic') {
@@ -54,8 +53,4 @@ function loadColorList(color, mode = 'analogic') {
       })
       colorsList.innerHTML = html;
     })
-
-
-
 }
-
